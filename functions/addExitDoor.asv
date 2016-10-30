@@ -13,7 +13,7 @@
 %   cols - number of cols of room
 %   cel_size - size of each cel in room
 %
-%   r = addExitDoor(52,1,2,0,createRoom(100,36),100,36,0.4)
+%   r = addExitDoor(5
 
 function res = addExitDoor(start_r,start_c,size,orientation,room,rows,cols,cel_size)
 
