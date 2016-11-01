@@ -2,19 +2,27 @@
 %parameter and the value is equal rows*cols+1
 %
 %Example:
-%  m = createRoom(5,4)
+%  [m,me] = createRoom(5,4)
 %
 %   Return
 %   m =
 %
-%        21    21    21    21
-%        21    21    21    21
-%        21    21    21    21
-%        21    21    21    21
-%        21    21    21    21
+%        -1    -1    -1    -1
+%        -1    -1    -1    -1
+%        -1    -1    -1    -1
+%        -1    -1    -1    -1
+%        -1    -1    -1    -1
 %
+%   me =
 %
+%        0    0    0    0
+%        0    0    0    0
+%        0    0    0    0
+%        0    0    0    0
+%        0    0    0    0
 %
-function res = createRoom(rows,cols)
+function [room,roomEmpty] = createRoom(rows,cols)
 
-res = (rows*cols+1)*ones(rows,cols);
+room = (-1)*ones(rows,cols);
+roomEmpty = zeros(rows,cols);
+end
