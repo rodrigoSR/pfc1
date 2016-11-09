@@ -1,6 +1,6 @@
 %This function insert defined number of peoples in a room
 
-function [peoples, room] = addPeoples(n,room)
+function [peoples, roomPeoples] = addPeoples(n,room)
 
 %create matrix will record all position of all peoples
 peoples = ones(n,2);
@@ -19,7 +19,7 @@ for i = 1:n
         if room(x,y) > -1
             if ~(sum(ismember(peoples,[x y],'rows')))
                peoples(i,:) = [x y];
-               room(x,y) = -3;
+               roomPeoples(x,y) = 1;
                prox = true;
             end
         end
